@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Pesto Homepage</title>
+  <style>
+    body {
+      font-family: 'Syne', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .image-container {
+      text-align: center;
+      width: 100%;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+  <meta name="google-site-verification" content="enxPOTSFD_ELvcFvqp4_oJNpvXcOM1TzmFgJ2t3S6bQ" />
+</head>
+
+
+<body class="w3-black">
+  <!-- Image and name container. Change to your picture here. -->
+<!-- Content. Add your bio here. -->
+  <div class="w3-margin">
+    <h2 class="w3-text-white"><strong>Pesto Homepage</strong></h2>
+    <h6>for support, email PESTO.helpline@gmail.com</h6>
+    </div>
+
+  <!-- Links section 1. Replace the # inside of the "" with your links. -->
+  <div class="links-container" id="matrixContainer">
+    <!--You can delete the ID part-->
+    <a href="https://www.google.com/" class="w3-button w3-hover-green w3-large w3-green" style="width: 350px;"
+      target="_blank">get out of here</a>
+    <a href="https://youtu.be/dQw4w9WgXcQ" class="w3-button w3-hover-red w3-large w3-red" style="width: 350px;"
+      target="_blank"> do not press</a>
+    <a href="https://mrdoob.com/projects/chromeexperiments/google-gravity/"
+      class="w3-button w3-hover-blue w3-large w3-blue" style="width: 350px;" target="_blank">break google</a>
+    <a href="https://edu.google.com/workspace-for-education/classroom/" class="w3-button w3-hover-grey w3-large w3-grey"
+      style="width: 350px;" target="_blank">go get an A+ and impress your parents</a>
+    <a id="startMatrix" class="w3-button w3-hover-yellow w3-large w3-yellow" style="width: 350px;" target="_blank">start
+      matrix</a>
+    <a id="pauseMatrix" class="w3-button w3-hover-cyan w3-large w3-cyan" style="width: 350px;" target="_blank">pause
+      matrix</a>
+    <a id="stopMatrix" class="w3-button w3-hover-orange w3-large w3-orange" style="width: 350px;" target="_blank">stop
+      matrix</a>
+    </a>
+  </div><a>
+  </a></div><a>
+    <script>
+      window.onload = function () {
+        const canvas = document.createElement('canvas');
+        document.body.appendChild(canvas); // Append the canvas to the body
+        canvas.style.position = 'fixed'; // Fixed positioning to cover the whole screen
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.zIndex = '-1'; // Send to back
+
+        let context = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        let matrixCharacters = [];
+        const characterSize = 20;
+        let columns = width / characterSize;
+
+        for (let x = 0; x < columns; x++) {
+          matrixCharacters[x] = 1;
+        }
+
+        function drawMatrixEffect() {
+          context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+          context.fillRect(0, 0, width, height);
+
+          context.fillStyle = '#0F0';
+          context.font = characterSize + 'px monospace';
+
+          for (let i = 0; i < matrixCharacters.length; i++) {
+            const text = String.fromCharCode(Math.random() * 128);
+            const x = i * characterSize;
+            const y = matrixCharacters[i] * characterSize;
+
+            context.fillText(text, x, y);
+
+            if (y > 100 + Math.random() * 10000) {
+              matrixCharacters[i] = 0;
+            }
+            matrixCharacters[i]++;
+          }
+        }
+
+        let matrixInterval = null;
+
+        // Resize the canvas when the window is resized
+        window.addEventListener('resize', function () {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          canvas.width = width;
+          canvas.height = height;
+          columns = width / characterSize;
+          matrixCharacters = [];
+          for (let x = 0; x < columns; x++) {
+            matrixCharacters[x] = 1;
+          }
+        });
+
+        function clearMatrixEffect() {
+          if (matrixInterval) {
+            clearInterval(matrixInterval);
+            matrixInterval = null;
+          }
+          context.clearRect(0, 0, width, height); // Clear the canvas
+        }
+        // Control buttons (optional)
+        const startButton = document.getElementById('startMatrix');
+        const pauseButton = document.getElementById('pauseMatrix');
+        const stopButton = document.getElementById('stopMatrix');
+
+        if (startButton) {
+          startButton.addEventListener('click', () => {
+            if (matrixInterval) {
+              //if running, dont do anything
+            } else { //if no matrix effect, then start effect
+
+              matrixInterval = setInterval(drawMatrixEffect, 70);
+            }
+          });
+        }
+        if (stopButton) {
+          stopButton.addEventListener('click', () => {
+            if (matrixInterval) {
+              clearInterval(matrixInterval);
+              matrixInterval = null;
+              context.clearRect(0, 0, width, height);
+            } else {
+              clearInterval(matrixInterval);
+              matrixInterval = null;
+              context.clearRect(0, 0, width, height);
+            }
+          });
+        }
+
+        if (pauseButton) {
+          pauseButton.addEventListener('click', () => {
+            if (matrixInterval) {
+              clearInterval(matrixInterval);
+              matrixInterval = null;
+
+            }
+          });
+        }
+      };
+     </script>
+  </body>
+</html>
