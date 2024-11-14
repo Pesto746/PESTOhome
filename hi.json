@@ -1,0 +1,20 @@
+{
+  "name": "My Web App",
+  "short_name": "App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0073e6",
+  "icons": [
+    {
+      "src": "https://drive.google.com/file/d/1AG3y6hCmf9Pkd61bvM4i9c4W0YJy0Sqf/view?usp=drivesdk",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://drive.google.com/file/d/1AG3y6hCmf9Pkd61bvM4i9c4W0YJy0Sqf/view?usp=drivesdk",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
