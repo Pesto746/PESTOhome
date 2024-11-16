@@ -1,7 +1,7 @@
 {
   "name": "PESTO home",
   "short_name": "Phome",
-  "start_url": "https://Pesto746.github.io/PESTOhome",
+  "start_url": "/PESTOhome",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
