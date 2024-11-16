@@ -10,14 +10,13 @@
     "C/Downloads/IMG_1034.jpeg": [
   {
     "C/Downloads/IMG_1034.jpeg": "/icons/icon-192x192.png",
-    "192x192": "192x192",
-    "jpeg": "image/jpeg"
+    "417x417": "417x417",
+    "image/jpeg": "image/jpeg"
   },
   {
     "C/Downloads/IMG_1034.jpeg": "/icons/icon-512x512.png",
-    "512x512": "512x512",
-    "jpeg": "image/jpeg"
+    "417x417": "417x417",
+    "image/jpeg": "image/jpeg"
   }
 ]
-
 }
