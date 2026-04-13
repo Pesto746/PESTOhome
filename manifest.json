@@ -1,6 +1,6 @@
 {
-  "name": "PESTO home",
-  "short_name": "Phome",
+  "name": "Pesto homepage",
+  "short_name": "Pesto home",
   "start_url": "/PESTOhome",
   "display": "fullscreen",
   "background_color": "#ffffff",
