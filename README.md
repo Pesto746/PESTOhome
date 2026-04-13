@@ -1,20 +1,20 @@
-<ins># Installing on devices</ins>
-<ins>## Windows </ins>
+# Installing on devices
+## Windows
 • Open Google Chrome
 • Click three dots
 • Press cast, save and share
 • Install
-<ins>## MacOS</ins>
+## MacOS
 • Open Google Chrome
 • Click three dots
 • Save and share
 • Install page as app
-<ins>## Ios</isn>
+## Ios
 • Open Safari
 • Click share
 • Click view more 
 • Click Add to Home Screen 
-<ins>## Android</ins> 
+## Android
 • Open website 
 • Press PESTOhome Android app 
 • And open file
