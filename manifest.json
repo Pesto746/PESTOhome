@@ -1,22 +1,21 @@
 {
-  "name": "Pesto homepage",
+  "name": "Pesto Homepage",
   "short_name": "Pesto home",
-  "start_url": "/PESTOhome",
-  "display": "fullscreen",
+  "start_url": "/PESTOhome/",
+  "scope": "/PESTOhome/",
+  "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "C/Downloads/IMG_1034.jpeg": [
+  "theme_color": "#3367D6",
+  "icons": [
     {
-    "C/Downloads/IMG_1034.jpeg": [
-  {
-    "C/Downloads/IMG_1034.jpeg": "/icons/icon-192x192.png",
-    "417x417": "417x417",
-    "image/jpeg": "image/jpeg"
-  },
-  {
-    "C/Downloads/IMG_1034.jpeg": "/icons/icon-512x512.png",
-    "417x417": "417x417",
-    "image/jpeg": "image/jpeg"
-  }
-]
+      "src": "/PESTOhome/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/PESTOhome/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
 }
