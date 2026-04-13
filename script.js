@@ -69,6 +69,3 @@ document.getElementById('startMatrix').addEventListener('click', () => {
         startMatrixEffect();
     }
 });
-self.addEventListener('fetch', (event) => {
-  // This is required for the install button to appear
-});
