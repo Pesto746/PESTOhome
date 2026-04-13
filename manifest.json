@@ -9,13 +9,25 @@
   "icons": [
     {
       "src": "/PESTOhome/logo.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
+      "sizes": "417x417",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/PESTOhome/logo.jpg",
+      "sizes": "417x417",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Desktop View"
     },
     {
       "src": "/PESTOhome/logo.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
+      "sizes": "417x417",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Mobile View"
     }
   ]
 }
