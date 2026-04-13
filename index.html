@@ -211,11 +211,13 @@
         }
       };
     </script>
-    <script>
+<script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('/PESTOhome/sw.js', { scope: '/PESTOhome/' })
+      .then(() => console.log('Service Worker Registered'));
   }
 </script>
+
 
   <a href="https://pesto746.github.io/PESTOhome/page%202">next page</a>
  </body>
