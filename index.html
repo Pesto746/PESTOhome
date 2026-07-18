@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pesto Homepage</title>
+  <title>Pesto Homepage - Moved</title>
   
   <!-- CRITICAL FOR GOOGLE SEARCH CONSOLE: Do not delete this tag -->
   <meta name="google-site-verification" content="D3LFrdUTrlatgJkydYfAXZmXHYtzPQvFqwLoVjy8Iig" />
   
   <!-- REDIRECT CONTROLS FOR GOOGLE AND USER TRANSITION -->
-  <meta http-equiv="refresh" content="0; URL=https://pesto746.github.io">
-  <link rel="canonical" href="https://pesto746.github.io">
+  <meta http-equiv="refresh" content="0; URL=https://pesto746.github.io/">
+  <link rel="canonical" href="https://pesto746.github.io/">
+  
   <script>
-    window.location.href = "https://pesto746.github.io";
+    // Explicitly targets and cleanly strips the old folder prefix during redirection
+    var newDomain = "https://pesto746.github.io";
+    var currentPath = window.location.pathname.replace("/PESTOhome", "");
+    
+    // Executes a clean browser history injection swap
+    window.location.replace(newDomain + currentPath + window.location.search);
   </script>
 
   <!-- Google tag (gtag.js) for tracking analytics during move -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWSKFNMNV5"></script>
+  <script async src="https://googletagmanager.com"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -25,8 +31,8 @@
   </script>
 </head>
 
-<body class="w3-black">
-  <p>Redirecting to <a href="https://pesto746.github.io">pesto746.github.io</a>...</p>
+<body style="background:#000; color:#fff; font-family:sans-serif; padding:20px;">
+  <p>Redirecting to <a href="https://pesto746.github.io" style="color:#00ffff;">pesto746.github.io</a>...</p>
 </body>
 
 </html>
