@@ -1,24 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pesto Homepage - Moved</title>
+  <title>Pesto Homepage - Moved Permanently</title>
   
   <!-- CRITICAL FOR GOOGLE SEARCH CONSOLE: Do not delete this tag -->
   <meta name="google-site-verification" content="D3LFrdUTrlatgJkydYfAXZmXHYtzPQvFqwLoVjy8Iig" />
   
   <!-- REDIRECT CONTROLS FOR GOOGLE AND USER TRANSITION -->
-  <meta http-equiv="refresh" content="0; URL=https://pesto746.github.io/">
-  <link rel="canonical" href="https://pesto746.github.io/">
+  <!-- Replace "https://your-new-actual-domain.com" with the exact new home of PESTOhome -->
+  <meta http-equiv="refresh" content="0; URL="https://pesto746.github.io">
+  <link rel="canonical" href="https://pesto746.github.io">
   
   <script>
-    // Explicitly targets and cleanly strips the old folder prefix during redirection
-    var newDomain = "https://pesto746.github.io";
+    // Define the EXACT independent domain where the PESTOhome project now lives
+    var realDestinationDomain = "https://pesto746.github.io";
+    
+    // Strips away the old folder path so users land clean on the new site's matching page
     var currentPath = window.location.pathname.replace("/PESTOhome", "");
     
-    // Executes a clean browser history injection swap
-    window.location.replace(newDomain + currentPath + window.location.search);
+    // Triggers a secure history-safe browser forward
+    window.location.replace(realDestinationDomain + currentPath + window.location.search);
   </script>
 
   <!-- Google tag (gtag.js) for tracking analytics during move -->
@@ -31,8 +35,10 @@
   </script>
 </head>
 
-<body style="background:#000; color:#fff; font-family:sans-serif; padding:20px;">
-  <p>Redirecting to <a href="https://pesto746.github.io" style="color:#00ffff;">pesto746.github.io</a>...</p>
+<body style="background:#000; color:#fff; font-family:sans-serif; padding:40px; text-align:center;">
+  <h2>The Pesto Homepage project has moved!</h2>
+  <p>Redirecting you to our brand new home at:</p>
+  <p><a href="https://your-new-actual-domain.com" style="color:#00ffff; font-weight:bold; font-size:1.2em;">your-new-actual-domain.com</a></p>
 </body>
 
 </html>
